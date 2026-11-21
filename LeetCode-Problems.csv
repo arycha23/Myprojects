@@ -1,0 +1,17 @@
+Date,filename,Difficulty,problem statements,samples test data,complexity,type of problem,Status
+2026-11-15,125-valid-palindrome,Easy,"A phrase is a palindrome if, after converting all uppercase letters to lowercase and removing all non-alphanumeric characters, it reads the same forward and backward. Given a string s, return true if it is a palindrome, or false otherwise.","s = ""A man, a plan, a canal: Panama"" -> true (becomes amanaplanacanalpanama)
+s = ""race a car"" -> false
+s = "" "" -> true","O(n) time, O(1) space",Two pointers,Open
+2026-11-15,014-longest-common-prefix,Easy,"Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string """".","strs = [""flower"", ""flow"", ""flight""] -> ""fl""
+strs = [""dog"", ""racecar"", ""car""] -> """"","O(S) time, O(1) space (S = total characters in all strings)",String,Open
+2026-11-15,771-jewels-and-stones,Easy,"You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels. Letters are case sensitive, so ""a"" is a different type of stone from ""A"". Return how many of the stones you have are also jewels.","jewels = ""aA"", stones = ""aAAbbbb"" -> 3
+jewels = ""z"", stones = ""ZZ"" -> 0","O(n + m) time, O(m) space",Hash set,Open
+2026-11-15,1108-defanging-an-ip-address,Easy,"Given a valid (IPv4) IP address, return a defanged version of that IP address. A defanged IP address replaces every period ""."" with ""[.]"".","address = ""1.1.1.1"" -> ""1[.]1[.]1[.]1""
+address = ""255.100.50.0"" -> ""255[.]100[.]50[.]0""","O(n) time, O(n) space",String,Open
+2026-11-19,026-remove-duplicates-from-sorted-array,Easy,"Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Return k, the number of unique elements, after placing the final result in the first k slots of nums. Do not allocate extra space for another array; modify the input array in-place with O(1) extra memory.","nums = [1,1,2] -> 2, nums = [1,2,_]
+nums = [0,0,1,1,1,2,2,3,3,4] -> 5, nums = [0,1,2,3,4,_,_,_,_,_]","O(n) time, O(1) space",Two pointers,Open
+2026-11-19,070-climbing-stairs,Easy,You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?,"n = 2 -> 2 (1 step + 1 step; 2 steps)
+n = 3 -> 3 (1 step + 1 step + 1 step; 1 step + 2 steps; 2 steps + 1 step)","O(n) time, O(1) space",Dynamic programming,Open
+2026-11-19,206-reverse-linked-list,Easy,"Given the head of a singly linked list, reverse the list, and return the reversed list.","head = [1,2,3,4,5] -> [5,4,3,2,1]
+head = [1,2] -> [2,1]
+head = [] -> []","O(n) time, O(1) space",Linked list,Open
